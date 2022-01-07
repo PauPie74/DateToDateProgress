@@ -27,7 +27,7 @@ var passedDays = Days(dateToDate(now, semesterStart))
 
 var TotalDays = Days(dateToDate( semesterEnd, semesterStart))
 
-document.getElementById("toGo").innerHTML = toGoDays + " days (" + Weeks(toGoDays) + ")";
+document.getElementById("toGo").innerHTML = toGoDays + " days (";
 
 document.getElementById("academicYearProgress").value = dateToPercent(passedDays, TotalDays);
 
