@@ -8,26 +8,26 @@ function dateToDate (date1, date2){
     return date1 - date2;
 }
 
-function Days (date){
+function Days(date){
     return Math.floor(date / (1000 * 60 * 60 * 24));
 }
 
-function dateToPercent (days, totalDays) {
+function dateToPercent(days, totalDays) {
   return days/totalDays * 100;
 }
 
-function Weeks (days) {
+function Weeks(days) {
   var w = days/7
   return w.toFixed(0) + " weeks " + days%7 + " days"
 }
 
-var toGoDays = Days(dateToDate( semesterEnd, now))
+var toGoDays = Days(dateToDate(semesterEnd, now))
 
 var passedDays = Days(dateToDate(now, semesterStart))
 
-var TotalDays = Days(dateToDate( semesterEnd, semesterStart))
+var TotalDays = Days(dateToDate(semesterEnd, semesterStart))
 
-document.getElementById("toGo").innerHTML = toGoDays + " days (";
+document.getElementById("toGo").innerHTML = toGoDays + " days";
 
 document.getElementById("academicYearProgress").value = dateToPercent(passedDays, TotalDays);
 
