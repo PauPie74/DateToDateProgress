@@ -1,3 +1,4 @@
+window.onload = function() {
 var semesterEnd = new Date("Jul 3, 2022").getTime();
 var semesterStart = new Date("Oct 1, 2021").getTime();
 var now = new Date().getTime();
@@ -59,5 +60,6 @@ if (semester == "Summer 2021/2022"){
     document.getElementById("semesterProgress").value = dateToPercent(passedDaysWinter, totalWinter);
     document.getElementById("semesterPercent").innerHTML = dateToPercent(passedDaysWinter, totalWinter).toFixed(2) + "%";
   }
+}
 
 
