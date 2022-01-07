@@ -9,15 +9,19 @@
 </head>
 <body>
 
-    <p class = "head">Academic year ends in:</p>
-    <p id="toGo"></p>
-    <p id="Pass"></p>
-    <p id="Tot"></p>
-    <p id="per"></p>
-
-    <progress id="progressBar" max="100"><p id="toGo"></p></progress>
-
-    <p>Current Semester:</p>
+    <p class = "head">Academic year ends in</p>
+    <div id="toGo"></div>
+    
+    <div class = "Progresses">
+    <progress class = "ProgressBar" id="academicYearProgress" max="100"></progress>
+      <p class = "percentage" id="academicYearPercent"></p></div>
+    
+    
+    <p class = "head">Current Semester:</p>
+    <div id="Semester"></div>
+    <div class = "Progresses">
+    <progress class = "ProgressBar" id="semesterProgress" max="100"></progress>
+      <p class = "percentage" id="semesterPercent"></p></div>
 
 
 </body>

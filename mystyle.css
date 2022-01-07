@@ -1,10 +1,33 @@
 body {
     text-align: center;
     background-color: rgba(14, 14, 14, 1);
-    color: rgba(228, 63, 111, 1);
+    color: white;
     font-family: Arial;
   }
   
   .head{
       font-weight: bold;
+      color: rgba(228, 63, 111, 1);
+  }
+  
+  .Progresses {
+     display: flex;
+     align-items:center;
+     justify-content: center;
+  }
+  
+   .percentage {
+    padding-left: 5px;
+  }
+  
+  .ProgressBar {
+    -webkit-appearance: none;
+  }
+  
+  ::-webkit-progress-value {
+    background-color: rgba(228, 63, 111, 1);
+  }
+  
+  ::-webkit-progress-bar {
+    background-color: rgba(47, 52, 55, 1);
   }
