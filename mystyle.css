@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    background-color: rgba(14, 14, 14, 1);
+    color: rgba(228, 63, 111, 1);
+    font-family: Arial;
+  }
+  
+  .head{
+      font-weight: bold;
+  }
